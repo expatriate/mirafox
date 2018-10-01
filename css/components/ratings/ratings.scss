@@ -1,0 +1,40 @@
+.ratings {
+    display: flex;
+    align-items: baseline;
+
+    &__mark {
+        font-weight: bold;
+        font-size: 1em;
+        display: flex;
+    }
+
+    &__count {
+        color: #aaaaaa;
+        margin-left: 4px;
+        font-size: 0.9em;
+        display: flex;
+    }
+
+    &__star {
+        display: flex;
+    }
+
+    i {
+        top: -1px;
+        position: relative;
+        right: 2px;
+    }
+
+
+    &__yellow {
+
+        .ratings__mark, i {
+            color: #f7b331;
+        }
+
+        i {
+            font-size: 0.8em;
+            margin-bottom: 4px;
+        }
+    }
+}

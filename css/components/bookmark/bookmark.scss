@@ -1,0 +1,20 @@
+.bookmark {
+
+    display: flex;
+    flex: 1;
+    a {
+        font-size: 1.1em;
+        color: #dedede;
+        transition: all ease .4s;
+        text-transform: none;
+
+        &:hover {
+            transition: all ease .4s;
+            color: #f44336;
+        }
+
+        &.active {
+            color: #f44336;
+        }
+    }
+}

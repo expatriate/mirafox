@@ -1,0 +1,36 @@
+
+@import "helpers/mixins";
+@import "helpers/variables";
+@import "../vendor/sass-mediaqueries/media-queries";
+
+body, html {
+    min-height: 100%;
+    font-size: 16px;
+
+    @include screen($mobile-start, $mobile-end) {
+        font-size: 12px;
+    }
+
+    @include screen($tablet-start, $tablet-end) {
+        font-size: 14px;
+    }
+}
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    outline: none;
+}
+
+.app {
+    background-color: #efefef;
+    padding: 0px 40px 40px 60px;
+}
+
+@import "components/heading/heading";
+@import "components/username/username";
+@import "components/bookmark/bookmark";
+@import "components/cost/cost";
+@import "components/ratings/ratings";
+@import "components/card/card";
+@import "components/card-list/card-list";
+@import "components/card-slider/card-slider";

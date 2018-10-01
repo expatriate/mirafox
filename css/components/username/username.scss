@@ -1,0 +1,32 @@
+.username {
+    display: flex;
+    align-items: baseline;
+    flex: 1;
+
+    &__status {
+        display: block;
+        width: 10px;
+        height: 10px;
+        border-radius: 10px;
+        margin-right: 4px;
+    }
+
+    &__offline {
+        background-color: #dedede;
+    }
+
+    &__online {
+        background-color: #3b9c38;
+    }
+
+    &__name {
+        text-decoration: none;
+        color: #aaaaaa;
+        font-weight: bold;
+        font-size: 1em;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
